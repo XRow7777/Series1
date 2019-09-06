@@ -37,6 +37,9 @@ client.on("message", async message => {
     }
 })
 
+client.login(token)
+
+//^^ thats all the code
 
 //everytime we make a command now it should look like this
 
