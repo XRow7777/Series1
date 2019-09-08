@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 // We then require this package
-const Google = require('reevant-google');
+const Google = require('relevant-google');
 // We then need a Google API key...
 const { googleapi } = require(`./config.json`)
 // you would define your one as const googleapi = (`YOUR API KEY`)
@@ -10,12 +10,12 @@ const { googleapi } = require(`./config.json`)
 exports.run = async(client, message, args) => {
 
     //Libarys we need that are built in node
-    const tch = require('node-fetch');
-    const queystrig= require('querystring');
+    const fetch = require('node-fetch');
+    const querystring= require('querystring');
 // if the user does not supply a search term send a message
 
 // we need to iniate a google api sorry!
-const gogle = new Google(googleapi);
+const google = new Google(googleapi);
 
     if(!args.length){
         return message.channel.send("Supply a search term please!")
