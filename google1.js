@@ -14,7 +14,7 @@ exports.run = async(client, message, args) => {
     const querystring= require('querystring');
 // if the user does not supply a search term send a message
 
-// we need to iniate a google api sorry!
+// we need to iniate a google api!
 const google = new Google(googleapi);
 
     if(!args.length){
